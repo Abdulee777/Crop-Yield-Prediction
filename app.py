@@ -144,7 +144,7 @@ def main():
         if validate_inputs(inputs):
             input_data = pd.DataFrame(map_inputs(inputs, mappings))
             prediction = model.predict(input_data)
-            st.write(f"Predicted Crop Yield: {prediction[0]}")
+            st.write(f"Predicted Crop Yield: {prediction[0]} kg/ha")
         else:
             st.warning("Please input values for all fields.")
 
